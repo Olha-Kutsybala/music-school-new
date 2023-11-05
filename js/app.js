@@ -570,7 +570,7 @@
     menuInit();
     formFieldsInit({
         viewPass: true,
-        autoHeight: true
+        autoHeight: false
     });
     formSubmit();
 })();

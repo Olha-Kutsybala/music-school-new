@@ -130,6 +130,17 @@ body {
   padding: 0 0.9375rem;
 }
 
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0px 0px;
+}
+
+.button--fw {
+  width: 100%;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -142,6 +153,7 @@ textarea {
 .input {
   width: 100%;
   display: block;
+  padding: 0px 20px;
   border: 1px solid #eee;
 }
 
@@ -849,11 +861,11 @@ textarea.form__input {
   }
 
   .footer__icon {
-    height: 2.5rem;
+    height: 1.5rem;
   }
 
   .footer__icon {
-    width: 2.5rem;
+    width: 1.5rem;
   }
 
   .no-webp .bg-image{
@@ -1599,27 +1611,27 @@ textarea.form__input {
     }
 }
 
-@supports (height: clamp( 0.75rem , 0.1843434343rem  +  2.8282828283vw , 2.5rem )) {
+@supports (height: clamp( 0.75rem , 0.5075757576rem  +  1.2121212121vw , 1.5rem )) {
     .footer__icon {
-      height: clamp( 0.75rem , 0.1843434343rem  +  2.8282828283vw , 2.5rem );
+      height: clamp( 0.75rem , 0.5075757576rem  +  1.2121212121vw , 1.5rem );
     }
 }
 
-@supports not (height: clamp( 0.75rem , 0.1843434343rem  +  2.8282828283vw , 2.5rem )) {
+@supports not (height: clamp( 0.75rem , 0.5075757576rem  +  1.2121212121vw , 1.5rem )) {
     .footer__icon {
-      height: calc(0.75rem + 1.75 * (100vw - 20rem) / 61.875);
+      height: calc(0.75rem + 0.75 * (100vw - 20rem) / 61.875);
     }
 }
 
-@supports (width: clamp( 0.75rem , 0.1843434343rem  +  2.8282828283vw , 2.5rem )) {
+@supports (width: clamp( 0.75rem , 0.5075757576rem  +  1.2121212121vw , 1.5rem )) {
     .footer__icon {
-      width: clamp( 0.75rem , 0.1843434343rem  +  2.8282828283vw , 2.5rem );
+      width: clamp( 0.75rem , 0.5075757576rem  +  1.2121212121vw , 1.5rem );
     }
 }
 
-@supports not (width: clamp( 0.75rem , 0.1843434343rem  +  2.8282828283vw , 2.5rem )) {
+@supports not (width: clamp( 0.75rem , 0.5075757576rem  +  1.2121212121vw , 1.5rem )) {
     .footer__icon {
-      width: calc(0.75rem + 1.75 * (100vw - 20rem) / 61.875);
+      width: calc(0.75rem + 0.75 * (100vw - 20rem) / 61.875);
     }
 }
 

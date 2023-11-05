@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231103203529">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231105193840">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -129,22 +129,14 @@
 						<source srcset=img/try_mobile.webp 1x,img/try_mobile@2x.webp 2x" media="(max-width: 578px)" type="image/webp" />
 						<source srcset=img/try_mobile.jpg 1x,img/try_mobile@2x.jpg 2x" media="(max-width: 578px)" type="image/jpg" />
 						<source srcset=img/try_tablet.jpg 1x,img/try_tablet@2x.jpg 2x" media="(min-width: 579px) and (max-width: 1439px)" type="image/jpg" />
-						<!-- <source
-                  srcset="
-                   img/try_desktop.webp    1x,
-                   img/try_desktop@2x.webp 2x
-                  "
-                  media="(min-width: 1440px)"
-                  type="image/webp"
-                /> -->
 						<source srcset=img/try_desktop.jpg 1x,img/try_desktop@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpg" />
 						<img src="img/try_mobile.jpg" alt="Мікрофон" />
 					</picture>
 					<div class="try__content_block">
 						<h2 class="try__content_title">ЗАПИСАТИСЬ НА ПРОБНЕ ЗАНЯТТЯ</h2>
-						<form class="try__content_form formTelegram" action="#">
-							<input required autocomplete="on" type="text" class="input try__content_input" placeholder="Ім’я" />
-							<input required autocomplete="on" type="phone" class="input try__content_input" placeholder="Телефон" />
+						<form data-dev data-popup-message="#form-message" action="#" class="form try__content_form formTelegram">
+							<input data-goto-error name="name" required autocomplete="on" type="text" class="input try__content_input" placeholder="Ім’я" />
+							<input data-goto-error data-validate data-required autocomplete="on" type="phone" class="input try__content_input" placeholder="Телефон" />
 							<button type="submit" class="button try__content_btn">
 								ЗАПИСАТИСЬ
 							</button>
@@ -184,7 +176,7 @@
 	</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20231103203529"></script>
+	<script src="js/app.min.js?_v=20231105193840"></script>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -195,13 +187,24 @@
 					</svg>
 				</button>
 				<div class="popup__text">
-					<form class="form" action="https://formsubmit.co/3d8cf7c739a32cb19030bdad3591c04c" method="POST">
-						<input required autocomplete="on" type="text" name="name" placeholder="Name" class="input form__input" />
+					<form data-popup-message="#form-message" class="form" action="files/sendmail/sendmail.php" method="POST">
+						<input data-goto-error required autocomplete="on" type="text" name="form[name]" placeholder="Name" class="input form__input" />
+						<input required data-error="Введен не верный E-mail" data-required="email" data-validate type="text" name="form[]" data-goto-error autocomplete="on" placeholder="E-mail" class="input form__input" />
 
-						<input required data-required="email" data-validate autocomplete="on" type="email" name="email" placeholder="E-mail" class="input form__input" />
-						<textarea name="message" required data-autoheight placeholder="Message" class="input form__input"></textarea>
+						<!-- <input
+            required
+            data-required="email"
+            data-error="Error"
+            data-validate
+            autocomplete="on"
+            type="email"
+            name="form[email]"
+            placeholder="E-mail"
+            class="input form__input"
+          /> -->
+						<textarea data-goto-error name="form[message]" required data-autoheight placeholder="Message" class="input form__input"></textarea>
 						<div class="checkbox checkbox__field">
-							<input id="checkbox-consent" class="checkbox__input" type="checkbox" name="checkbox-consent" />
+							<input required id="checkbox-consent" class="checkbox__input" type="checkbox" name="checkbox-consent" />
 							<label class="checkbox__label" for="checkbox-consent">Погоджуюся з розсилкою та приймаю &nbsp;<a href="" class="checkbox__link">Умови договору</a></label>
 						</div>
 						<button type="submit" class="form__button">Надіслати</button>
