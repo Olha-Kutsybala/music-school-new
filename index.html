@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231105193840">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231105200135">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -134,7 +134,7 @@
 					</picture>
 					<div class="try__content_block">
 						<h2 class="try__content_title">ЗАПИСАТИСЬ НА ПРОБНЕ ЗАНЯТТЯ</h2>
-						<form data-dev data-popup-message="#form-message" action="#" class="form try__content_form formTelegram">
+						<form netlify data-dev data-popup-message="#form-message" action="#" class="form try__content_form formTelegram">
 							<input data-goto-error name="name" required autocomplete="on" type="text" class="input try__content_input" placeholder="Ім’я" />
 							<input data-goto-error data-validate data-required autocomplete="on" type="phone" class="input try__content_input" placeholder="Телефон" />
 							<button type="submit" class="button try__content_btn">
@@ -176,7 +176,7 @@
 	</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20231105193840"></script>
+	<script src="js/app.min.js?_v=20231105200135"></script>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -187,7 +187,7 @@
 					</svg>
 				</button>
 				<div class="popup__text">
-					<form data-popup-message="#form-message" class="form" action="files/sendmail/sendmail.php" method="POST">
+					<form netlify data-popup-message="#form-message" class="form" action="files/sendmail/sendmail.php" method="POST">
 						<input data-goto-error required autocomplete="on" type="text" name="form[name]" placeholder="Name" class="input form__input" />
 						<input required data-error="Введен не верный E-mail" data-required="email" data-validate type="text" name="form[]" data-goto-error autocomplete="on" placeholder="E-mail" class="input form__input" />
 

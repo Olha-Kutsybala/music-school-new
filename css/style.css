@@ -804,6 +804,9 @@ textarea.form__input {
   color: #0a090a;
   font-family: Cormorant;
   font-weight: 600;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 100px;
   background-color: #fce667;
   margin-right: auto;
