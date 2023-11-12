@@ -17,16 +17,15 @@
 	$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
 	$mail->Username   = 'olyasheremeta@gmail.com';                     //SMTP username
 	$mail->Password   = 'abakywdwmgfvkqya';                               //SMTP password
-	// $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-	$mail->SMTPSecure = 'TLS';            //Enable implicit TLS encryption
-	// $mail->Port       = 465;              //    
-	$mail->Port       = 587;              //    
-	
-// 587
+	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+	// $mail->SMTPSecure = 'TLS';            //Enable implicit TLS encryption
+	$mail->Port       = 465;              //    
+	// $mail->Port       = 587;              //    
+
 	//Від кого лист
 	$mail->setFrom('olyasheremeta@gmail.com', 'Фрілансер по життю'); // Вказати потрібний E-mail
 	//Кому відправити
-	$mail->addAddress('olhakutsybala@gmail.com'); // Вказати потрібний E-mail
+	$mail->addAddress('olyasheremeta@gmail.com'); // Вказати потрібний E-mail
 	//Тема листа
 	$mail->Subject = 'Вітання! Це "Фрілансер по життю"';
 

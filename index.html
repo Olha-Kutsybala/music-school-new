@@ -3,13 +3,17 @@
 
 <head>
 	<title>HomePage</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231105200135">
-	<link rel="shortcut icon" href="favicon.ico">
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20231112195309" />
+	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -23,10 +27,10 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Відділи</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Вчителі</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Новини</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+							<li class="menu__item"><a href="#" data-goto=".about" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a href="#" data-goto=".departments" class="menu__link">Відділи</a></li>
+							<li class="menu__item"><a href="#" data-goto=".departments" class="menu__link">Новини</a></li>
+							<li class="menu__item"><a href="#" data-goto=".footer" class="menu__link">Контакти</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -47,10 +51,10 @@
 				</button>
 			</div>
 		</section>
-		<section class="about">
+		<section class="about" data-watch-threshold="0.3" data-watch data-watch-once>
 			<div class="about__container">
 				<img class="header__logo" src="img/logo.svg" alt="Лого" />
-				<div class="about__content">
+				<div class="about__content animation">
 					<picture>
 						<source srcset="
                    img/about_mobile.webp  1x,
@@ -73,7 +77,7 @@
 						<img src=img/about_mobile.jpg" alt="Музичні інструменти" />
 					</picture>
 					<div class="about__content_descr">
-						<h2 class="about__content_descr__title">ПРО НАС</h2>
+						<h2 class="title about__content_descr__title">ПРО НАС</h2>
 						<p class="about__content_descr__text">
 							Полтавська дитяча музична школа № 2 відкрита 1 вересня 1964
 							року. <br /><br />
@@ -87,42 +91,118 @@
 				</div>
 			</div>
 		</section>
-		<section class="number number__bg_image">
-			<div class="number__container">
-				<ul class="number__list">
+		<section data-watch-threshold="0.3" data-watch data-watch-once class="number number__bg_image">
+			<div class="number__container animation">
+				<ul data-watch class="number__list">
 					<li class="number__item">
-						<span class="number__number">64</span>
+						<span data-digits-counter class="number__number">64</span>
 						<p class="number__text">викладача</p>
 					</li>
 					<li class="number__item">
-						<span class="number__number">7</span>
+						<span data-digits-counter class="number__number">7</span>
 						<p class="number__text">відділів</p>
 					</li>
 					<li class="number__item">
-						<span class="number__number">456</span>
+						<span data-digits-counter class="number__number">456</span>
 						<p class="number__text">учнів</p>
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="departments">
-			<div class="departments__container">
+		<section class="departments" data-watch-threshold="0.3" data-watch data-watch-once>
+			<div class="departments__container animation">
 				<img class="header__logo" src="img/logo.svg" alt="Лого" />
-				<h2 class="departments__title">МИ НАВЧАЄМО</h2>
-				<ul class="departments__list">
-					<li class="departments__item">ВОКАЛ</li>
-					<li class="departments__item">ФОРТЕПІАНО</li>
-					<li class="departments__item">ГІТАРА</li>
-					<li class="departments__item">СКРИПКА</li>
-				</ul>
-				<a href="#" class="button hero__button departments__button">ІНШІ ВІДДІЛИ
-					<svg width="24" height="24">
-						<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-					</svg></a>
-			</div>
+				<h2 class="title departments__title">ВІДДІЛИ</h2>
+				<div data-tabs class="tabs">
+					<nav data-tabs-titles class="departments__list tabs__navigation">
+						<button type="button" class="departments__item tabs__title _tab-active">
+							ЕСТРАДНИЙ
+						</button>
+						<button type="button" class="departments__item tabs__title">
+							НАРОДНИЙ СТРУННИЙ
+						</button>
+						<button type="button" class="departments__item tabs__title">
+							НАРОДНИЙ
+						</button>
+						<button type="button" class="departments__item tabs__title">
+							ОРКЕСТРОВИЙ
+						</button>
+						<button type="button" class="departments__item tabs__title">
+							ФОРТЕПІАННИЙ
+						</button>
+						<button type="button" class="departments__item tabs__title">
+							ТЕОРЕТИЧНИЙ
+						</button>
+					</nav>
+					<div data-tabs-body class="tabs__content">
+						<div class="tabs__body">
+							<div class="department__tabs">
+								<picture><source srcset="img/depart-1.webp" type="image/webp"><img src="img/depart-1.jpg" alt="Мікрофон" class="department__tabs__content__img" /></picture>
+								<div class="department__tabs__content">
+									<h2 class="department__tabs__content__title title">
+										ЕСТРАДНИЙ ВІДДІЛ
+									</h2>
+									<p class="department__tabs__content__text width-316">Вокал розвиває мовний апарт та тренує артистичність і виразність</p>
+									<p class="department__tabs__content__text width-400">Учні відділу постійні та бажані учасники на різноманітних концертних майданчиках міста
+									</p>
+									<p class="department__tabs__content__text width-430">За останні три роки учні естрадного відділу здобули для школи понад 100 призових місць на пісенних конкурсах та фестивалях
+									</p>
+								</div>
+
+							</div>
+						</div>
+						<div class="tabs__body">
+							<div class="department__tabs">
+								<picture><source srcset="img/depart-2.webp" type="image/webp"><img src="img/depart-2.jpg" alt="Гітара" class="department__tabs__content__img" /></picture>
+								<div class="department__tabs__content">
+									<h2 class="department__tabs__content__title title">
+										ЕСТРАДНИЙ ВІДДІЛ
+									</h2>
+									<p class="department__tabs__content__text width-316">Вокал розвиває мовний апарт та тренує артистичність і виразність</p>
+									<p class="department__tabs__content__text width-400">Учні відділу постійні та бажані учасники на різноманітних концертних майданчиках міста
+									</p>
+									<p class="department__tabs__content__text width-430">За останні три роки учні естрадного відділу здобули для школи понад 100 призових місць на пісенних конкурсах та фестивалях
+									</p>
+								</div>
+
+							</div>
+						</div>
+						<div class="tabs__body">Вміст третього таба</div>
+					</div>
+				</div>
+
+
+				<!-- <div class="departments__container animation">
+            <img class="header__logo" src="img/logo.svg" alt="Лого" />
+            <h2 class="title departments__title">МИ НАВЧАЄМО</h2>
+            <div data-showmore="items">
+              <ul data-showmore-content class="departments__list">
+                <li class="departments__item">ВОКАЛ</li>
+                <li class="departments__item">ФОРТЕПІАНО</li>
+                <li class="departments__item">ГІТАРА</li>
+                <li class="departments__item">СКРИПКА</li>
+              </ul>
+              <button
+                hidden
+                data-showmore-button
+                type="button"
+                class="button hero__button departments__button"
+              >
+                <span>ІНШІ ВІДДІЛИ</span>
+                <span>Приховати ІНШІ ВІДДІЛИ</span>
+              </button>
+            </div>
+
+            <!-- <a
+              href="./departments.html"
+              class="button hero__button departments__button"
+              >ІНШІ ВІДДІЛИ
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use></svg
+            ></a> -->
 		</section>
-		<section class="try">
-			<div class="try__container">
+		<section class="try" data-watch-threshold="0.3" data-watch data-watch-once>
+			<div class="try__container animation">
 				<img class="header__logo" src="img/logo.svg" alt="Лого" />
 				<div class="try__content">
 					<picture class="try__image">
@@ -133,8 +213,10 @@
 						<img src="img/try_mobile.jpg" alt="Мікрофон" />
 					</picture>
 					<div class="try__content_block">
-						<h2 class="try__content_title">ЗАПИСАТИСЬ НА ПРОБНЕ ЗАНЯТТЯ</h2>
-						<form netlify data-dev data-popup-message="#form-message" action="#" class="form try__content_form formTelegram">
+						<h2 class="try__content_title title">
+							ЗАПИСАТИСЬ НА ПРОБНЕ ЗАНЯТТЯ
+						</h2>
+						<form action="#" class="form try__content_form formTelegram">
 							<input data-goto-error name="name" required autocomplete="on" type="text" class="input try__content_input" placeholder="Ім’я" />
 							<input data-goto-error data-validate data-required autocomplete="on" type="phone" class="input try__content_input" placeholder="Телефон" />
 							<button type="submit" class="button try__content_btn">
@@ -176,7 +258,7 @@
 	</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20231105200135"></script>
+	<script src="js/app.min.js?_v=20231112195309"></script>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -187,22 +269,11 @@
 					</svg>
 				</button>
 				<div class="popup__text">
-					<form netlify data-popup-message="#form-message" class="form" action="files/sendmail/sendmail.php" method="POST">
-						<input data-goto-error required autocomplete="on" type="text" name="form[name]" placeholder="Name" class="input form__input" />
-						<input required data-error="Введен не верный E-mail" data-required="email" data-validate type="text" name="form[]" data-goto-error autocomplete="on" placeholder="E-mail" class="input form__input" />
+					<form data-dev data-popup-message="#message" class="form_new" action="files/sendmail/sendmail.php" method="POST">
+						<input data-goto-error required autocomplete="on" type="text" name="name" placeholder="Name" class="input form__input" />
+						<input required data-validate data-error="Введіть правильний E-mail" data-required="email" type="text" name="email" data-goto-error autocomplete="on" placeholder="E-mail" class="input form__input" />
 
-						<!-- <input
-            required
-            data-required="email"
-            data-error="Error"
-            data-validate
-            autocomplete="on"
-            type="email"
-            name="form[email]"
-            placeholder="E-mail"
-            class="input form__input"
-          /> -->
-						<textarea data-goto-error name="form[message]" required data-autoheight placeholder="Message" class="input form__input"></textarea>
+						<textarea name="message" required placeholder="Message" class="input form__input"></textarea>
 						<div class="checkbox checkbox__field">
 							<input required id="checkbox-consent" class="checkbox__input" type="checkbox" name="checkbox-consent" />
 							<label class="checkbox__label" for="checkbox-consent">Погоджуюся з розсилкою та приймаю &nbsp;<a href="" class="checkbox__link">Умови договору</a></label>
