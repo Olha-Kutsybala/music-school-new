@@ -1897,11 +1897,11 @@ textarea.form__input {
   }
 
   .department__tabs__content__img--2 {
-    width: 9.375rem;
+    width: 7.5rem;
   }
 
   .department__tabs__content__img--2 {
-    height: 12.5rem;
+    height: 11.25rem;
   }
 
   .department__tabs__content__img--3 {
@@ -3047,27 +3047,27 @@ textarea.form__input {
     }
 }
 
-@supports (width: clamp( 9.375rem , 2.4826923077rem  +  34.4615384615vw , 30.375rem )) {
+@supports (width: clamp( 7.5rem , -0.0076923077rem  +  37.5384615385vw , 30.375rem )) {
     .department__tabs__content__img--2 {
-      width: clamp( 9.375rem , 2.4826923077rem  +  34.4615384615vw , 30.375rem );
+      width: clamp( 7.5rem , -0.0076923077rem  +  37.5384615385vw , 30.375rem );
     }
 }
 
-@supports not (width: clamp( 9.375rem , 2.4826923077rem  +  34.4615384615vw , 30.375rem )) {
+@supports not (width: clamp( 7.5rem , -0.0076923077rem  +  37.5384615385vw , 30.375rem )) {
     .department__tabs__content__img--2 {
-      width: calc(9.375rem + 21 * (100vw - 20rem) / 60.9375);
+      width: calc(7.5rem + 22.875 * (100vw - 20rem) / 60.9375);
     }
 }
 
-@supports (height: clamp( 12.5rem , -4.4025641026rem  +  84.5128205128vw , 64rem )) {
+@supports (height: clamp( 11.25rem , -6.0628205128rem  +  86.5641025641vw , 64rem )) {
     .department__tabs__content__img--2 {
-      height: clamp( 12.5rem , -4.4025641026rem  +  84.5128205128vw , 64rem );
+      height: clamp( 11.25rem , -6.0628205128rem  +  86.5641025641vw , 64rem );
     }
 }
 
-@supports not (height: clamp( 12.5rem , -4.4025641026rem  +  84.5128205128vw , 64rem )) {
+@supports not (height: clamp( 11.25rem , -6.0628205128rem  +  86.5641025641vw , 64rem )) {
     .department__tabs__content__img--2 {
-      height: calc(12.5rem + 51.5 * (100vw - 20rem) / 60.9375);
+      height: calc(11.25rem + 52.75 * (100vw - 20rem) / 60.9375);
     }
 }
 
