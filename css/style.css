@@ -1897,7 +1897,7 @@ textarea.form__input {
   }
 
   .department__tabs__content__img--2 {
-    width: 12.5rem;
+    width: 9.375rem;
   }
 
   .department__tabs__content__img--2 {
@@ -1905,11 +1905,11 @@ textarea.form__input {
   }
 
   .department__tabs__content__img--3 {
-    width: 9.375rem;
+    width: 8.75rem;
   }
 
   .department__tabs__content__img--3 {
-    height: 9.375rem;
+    height: 8.125rem;
   }
 
   .department__tabs__content__img--4 {
@@ -3047,15 +3047,15 @@ textarea.form__input {
     }
 }
 
-@supports (width: clamp( 12.5rem , 6.6333333333rem  +  29.3333333333vw , 30.375rem )) {
+@supports (width: clamp( 9.375rem , 2.4826923077rem  +  34.4615384615vw , 30.375rem )) {
     .department__tabs__content__img--2 {
-      width: clamp( 12.5rem , 6.6333333333rem  +  29.3333333333vw , 30.375rem );
+      width: clamp( 9.375rem , 2.4826923077rem  +  34.4615384615vw , 30.375rem );
     }
 }
 
-@supports not (width: clamp( 12.5rem , 6.6333333333rem  +  29.3333333333vw , 30.375rem )) {
+@supports not (width: clamp( 9.375rem , 2.4826923077rem  +  34.4615384615vw , 30.375rem )) {
     .department__tabs__content__img--2 {
-      width: calc(12.5rem + 17.875 * (100vw - 20rem) / 60.9375);
+      width: calc(9.375rem + 21 * (100vw - 20rem) / 60.9375);
     }
 }
 
@@ -3071,27 +3071,27 @@ textarea.form__input {
     }
 }
 
-@supports (width: clamp( 9.375rem , -1.7224358974rem  +  55.4871794872vw , 43.1875rem )) {
+@supports (width: clamp( 8.75rem , -2.5525641026rem  +  56.5128205128vw , 43.1875rem )) {
     .department__tabs__content__img--3 {
-      width: clamp( 9.375rem , -1.7224358974rem  +  55.4871794872vw , 43.1875rem );
+      width: clamp( 8.75rem , -2.5525641026rem  +  56.5128205128vw , 43.1875rem );
     }
 }
 
-@supports not (width: clamp( 9.375rem , -1.7224358974rem  +  55.4871794872vw , 43.1875rem )) {
+@supports not (width: clamp( 8.75rem , -2.5525641026rem  +  56.5128205128vw , 43.1875rem )) {
     .department__tabs__content__img--3 {
-      width: calc(9.375rem + 33.8125 * (100vw - 20rem) / 60.9375);
+      width: calc(8.75rem + 34.4375 * (100vw - 20rem) / 60.9375);
     }
 }
 
-@supports (height: clamp( 9.375rem , -0.266025641rem  +  48.2051282051vw , 38.75rem )) {
+@supports (height: clamp( 8.125rem , -1.9262820513rem  +  50.2564102564vw , 38.75rem )) {
     .department__tabs__content__img--3 {
-      height: clamp( 9.375rem , -0.266025641rem  +  48.2051282051vw , 38.75rem );
+      height: clamp( 8.125rem , -1.9262820513rem  +  50.2564102564vw , 38.75rem );
     }
 }
 
-@supports not (height: clamp( 9.375rem , -0.266025641rem  +  48.2051282051vw , 38.75rem )) {
+@supports not (height: clamp( 8.125rem , -1.9262820513rem  +  50.2564102564vw , 38.75rem )) {
     .department__tabs__content__img--3 {
-      height: calc(9.375rem + 29.375 * (100vw - 20rem) / 60.9375);
+      height: calc(8.125rem + 30.625 * (100vw - 20rem) / 60.9375);
     }
 }
 
