@@ -948,14 +948,6 @@ textarea.form__input {
   background-color: #fce667;
 }
 
-.try__content_input {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-  border-radius: 100px;
-  border: 1px solid #949090;
-  background-color: #fff;
-}
-
 .try__content_form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -964,6 +956,14 @@ textarea.form__input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.try__content_input {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  border-radius: 100px;
+  border: 1px solid #949090;
+  background-color: #fff;
 }
 
 .try__content_input::-webkit-input-placeholder {
@@ -1060,14 +1060,6 @@ textarea.form__input {
 
 .contacts__icon {
   fill: #e3dcdc;
-}
-
-@media (min-width: 47.99875em) {
-  .department__tabs__content {
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
 }
 
 @media (min-width: 61.99875em) {
@@ -1420,6 +1412,12 @@ textarea.form__input {
     height: 50.1875rem;
   }
 
+  .department__tabs__content {
+    -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+            transform: translateX(-110%);
+  }
+
   .department__tabs__content__title {
     margin-bottom: 5rem;
   }
@@ -1457,11 +1455,23 @@ textarea.form__input {
   }
 
   .try__content_block {
-    width: 34rem;
+    width: 36.0625rem;
   }
 
   .try__content_title {
     padding-bottom: 4.5rem;
+  }
+
+  .try__content_form {
+    gap: 2.25rem;
+  }
+
+  .try__content_form {
+    margin-bottom: 3.875rem;
+  }
+
+  .try__content_form {
+    width: 26.25rem;
   }
 
   .try__content_input {
@@ -1478,14 +1488,6 @@ textarea.form__input {
 
   .try__content_input {
     padding-bottom: 1.0625rem;
-  }
-
-  .try__content_form {
-    gap: 2.25rem;
-  }
-
-  .try__content_form {
-    margin-bottom: 3.875rem;
   }
 
   .try__content_input::-webkit-input-placeholder {
@@ -1586,6 +1588,22 @@ textarea.form__input {
     -webkit-transform: translateX(-80%);
         -ms-transform: translateX(-80%);
             transform: translateX(-80%);
+  }
+}
+
+@media (min-width: 700px) {
+  .department__tabs__content {
+    -webkit-transform: translateX(-90%);
+        -ms-transform: translateX(-90%);
+            transform: translateX(-90%);
+  }
+}
+
+@media (min-width: 1100px) {
+  .department__tabs__content {
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
@@ -1947,11 +1965,23 @@ textarea.form__input {
   }
 
   .try__content_block {
-    width: 10.6875rem;
+    width: 6.875rem;
   }
 
   .try__content_title {
     padding-bottom: 0.75rem;
+  }
+
+  .try__content_form {
+    gap: 0.5rem;
+  }
+
+  .try__content_form {
+    margin-bottom: 1.125rem;
+  }
+
+  .try__content_form {
+    width: 7.5rem;
   }
 
   .try__content_input {
@@ -1968,14 +1998,6 @@ textarea.form__input {
 
   .try__content_input {
     padding-bottom: 0.1875rem;
-  }
-
-  .try__content_form {
-    gap: 0.5rem;
-  }
-
-  .try__content_form {
-    margin-bottom: 1.125rem;
   }
 
   .try__content_input::-webkit-input-placeholder {
@@ -3229,15 +3251,15 @@ textarea.form__input {
     }
 }
 
-@supports (width: clamp( 10.6875rem , 3.0362179487rem  +  38.2564102564vw , 34rem )) {
+@supports (width: clamp( 6.875rem , -2.7044871795rem  +  47.8974358974vw , 36.0625rem )) {
     .try__content_block {
-      width: clamp( 10.6875rem , 3.0362179487rem  +  38.2564102564vw , 34rem );
+      width: clamp( 6.875rem , -2.7044871795rem  +  47.8974358974vw , 36.0625rem );
     }
 }
 
-@supports not (width: clamp( 10.6875rem , 3.0362179487rem  +  38.2564102564vw , 34rem )) {
+@supports not (width: clamp( 6.875rem , -2.7044871795rem  +  47.8974358974vw , 36.0625rem )) {
     .try__content_block {
-      width: calc(10.6875rem + 23.3125 * (100vw - 20rem) / 60.9375);
+      width: calc(6.875rem + 29.1875 * (100vw - 20rem) / 60.9375);
     }
 }
 
@@ -3250,6 +3272,42 @@ textarea.form__input {
 @supports not (padding-bottom: clamp( 0.75rem , -0.4807692308rem  +  6.1538461538vw , 4.5rem )) {
     .try__content_title {
       padding-bottom: calc(0.75rem + 3.75 * (100vw - 20rem) / 60.9375);
+    }
+}
+
+@supports (gap: clamp( 0.5rem , -0.0743589744rem  +  2.8717948718vw , 2.25rem )) {
+    .try__content_form {
+      gap: clamp( 0.5rem , -0.0743589744rem  +  2.8717948718vw , 2.25rem );
+    }
+}
+
+@supports not (gap: clamp( 0.5rem , -0.0743589744rem  +  2.8717948718vw , 2.25rem )) {
+    .try__content_form {
+      gap: calc(0.5rem + 1.75 * (100vw - 20rem) / 60.9375);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.125rem , 0.2224358974rem  +  4.5128205128vw , 3.875rem )) {
+    .try__content_form {
+      margin-bottom: clamp( 1.125rem , 0.2224358974rem  +  4.5128205128vw , 3.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.125rem , 0.2224358974rem  +  4.5128205128vw , 3.875rem )) {
+    .try__content_form {
+      margin-bottom: calc(1.125rem + 2.75 * (100vw - 20rem) / 60.9375);
+    }
+}
+
+@supports (width: clamp( 7.5rem , 1.3461538462rem  +  30.7692307692vw , 26.25rem )) {
+    .try__content_form {
+      width: clamp( 7.5rem , 1.3461538462rem  +  30.7692307692vw , 26.25rem );
+    }
+}
+
+@supports not (width: clamp( 7.5rem , 1.3461538462rem  +  30.7692307692vw , 26.25rem )) {
+    .try__content_form {
+      width: calc(7.5rem + 18.75 * (100vw - 20rem) / 60.9375);
     }
 }
 
@@ -3298,30 +3356,6 @@ textarea.form__input {
 @supports not (padding-bottom: clamp( 0.1875rem , -0.0996794872rem  +  1.4358974359vw , 1.0625rem )) {
     .try__content_input {
       padding-bottom: calc(0.1875rem + 0.875 * (100vw - 20rem) / 60.9375);
-    }
-}
-
-@supports (gap: clamp( 0.5rem , -0.0743589744rem  +  2.8717948718vw , 2.25rem )) {
-    .try__content_form {
-      gap: clamp( 0.5rem , -0.0743589744rem  +  2.8717948718vw , 2.25rem );
-    }
-}
-
-@supports not (gap: clamp( 0.5rem , -0.0743589744rem  +  2.8717948718vw , 2.25rem )) {
-    .try__content_form {
-      gap: calc(0.5rem + 1.75 * (100vw - 20rem) / 60.9375);
-    }
-}
-
-@supports (margin-bottom: clamp( 1.125rem , 0.2224358974rem  +  4.5128205128vw , 3.875rem )) {
-    .try__content_form {
-      margin-bottom: clamp( 1.125rem , 0.2224358974rem  +  4.5128205128vw , 3.875rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.125rem , 0.2224358974rem  +  4.5128205128vw , 3.875rem )) {
-    .try__content_form {
-      margin-bottom: calc(1.125rem + 2.75 * (100vw - 20rem) / 60.9375);
     }
 }
 
